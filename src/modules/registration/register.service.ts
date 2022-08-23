@@ -1,5 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
-import { Profile } from './profile.model';
+
 
 @Injectable()
 export class RegisterService  {
@@ -16,12 +16,12 @@ export class RegisterService  {
   //   return this.profile;   
   // }
 
-  getJobProfile(param):string {
-    return `Role: ${param}`;
-  }
+  // getJobProfile(param):string {
+  //   return `Role: ${param}`;
+  // }
 
   studentRegistration(): String  {
     this.logger.warn("This is a Post request for registration");
-    return `Registration Successfull`;
+    return `Registration is Successfull`;
   }
 }

@@ -11,8 +11,11 @@ const swagger_1 = require("@nestjs/swagger");
 const app_module_1 = require("./app.module");
 let server;
 async function bootstrap() {
-    const app = await core_1.NestFactory.create(app_module_1.AppModule, {
-        logger: ['error', 'warn'],
+    const app = await core_1.NestFactory.create(app_module_1.AppModule, { cors: true });
+    app.enableCors({
+        origin: true,
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
+        credentials: true,
     });
     app.enableVersioning({
         type: common_1.VersioningType.URI,

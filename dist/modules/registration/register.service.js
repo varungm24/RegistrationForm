@@ -16,12 +16,9 @@ let RegisterService = class RegisterService {
         this.logger = new common_1.Logger();
     }
     ;
-    getJobProfile(param) {
-        return `Role: ${param}`;
-    }
     studentRegistration() {
         this.logger.warn("This is a Post request for registration");
-        return `Registration Successfull`;
+        return `Registration is Successfull`;
     }
 };
 RegisterService = __decorate([
