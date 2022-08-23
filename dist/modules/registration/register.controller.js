@@ -30,7 +30,7 @@ let RegisterController = class RegisterController {
                 educationDetails = [
                     { displayText: 'UG', value: 'ug' },
                     { displayText: 'PG', value: 'pg' },
-                    { displayText: 'UG', value: 'ug' },
+                    { displayText: 'Diploma', value: 'diploma' },
                 ];
                 break;
             default:

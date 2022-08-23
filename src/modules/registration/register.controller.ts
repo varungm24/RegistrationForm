@@ -20,7 +20,7 @@ import { Role, Education, Degree } from './enums';
 @Controller()
 export class RegisterController {
   constructor(private readonly registerService: RegisterService) {}
-  
+
   @Version('1')
   @ApiQuery({ name: 'role', enum: Role })
   @Get('education')
@@ -32,7 +32,7 @@ export class RegisterController {
         educationDetails = [
           { displayText: 'UG', value: 'ug' },
           { displayText: 'PG', value: 'pg' },
-          { displayText: 'UG', value: 'ug' },
+          { displayText: 'Diploma', value: 'diploma' },
         ];
         break;
       default:
